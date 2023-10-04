@@ -56,4 +56,6 @@ app.use(invitationsRouter);
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname + '../../client/build/index.html'));
 });
+
+// run the server at port 8080
 app.listen(port, () => console.log(`app is running in PORT: ${port}`));
